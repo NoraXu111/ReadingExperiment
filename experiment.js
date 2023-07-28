@@ -268,11 +268,6 @@ function displayPlusSymbol() {
             Experiment3Words();
         }
 
-        // else if (conditionIndex === 3) {
-        //     console.log("SlidingRSVP")
-        //     ExperimentSliding();
-        // }
-
         else if (conditionIndex === 3) {
             console.log("SlidingNarrowRSVP");
             ExperimentSlidingNarrow();
