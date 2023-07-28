@@ -17,22 +17,32 @@ break-word;text-justify-trim:punctuation">
             <p class="MsoNormal" style="margin-left:2.0cm;line-height:95%"><span lang="EN-US"
                     style="mso-ansi-language:EN-US">&nbsp;</span></p>
 
-            <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:95%;border-collapse:collapse;mso-yfti-tbllook:1184;
+            <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:90%;border-collapse:collapse;mso-yfti-tbllook:1184;
     mso-padding-alt:0cm 0cm 0cm 0cm">
                 <tbody>
                     <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
                         <td width="50%" valign="top" style="width:302.4pt;padding:0cm 5.4pt 0cm 5.4pt">
-                            <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">Dr. Matthias Niemeier</p>
-                            <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">1265 Military Trail, Toronto</p>
-                            <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">Ontario, Canada M1C 1A4</p>
+                            <p class="MsoNormal"
+                                style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">
+                                Dr. Matthias Niemeier</p>
+                            <p class="MsoNormal"
+                                style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">
+                                1265 Military Trail, Toronto</p>
+                            <p class="MsoNormal"
+                                style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">
+                                Ontario, Canada M1C 1A4</p>
                         </td>
                         <td width="50%" valign="top" style="width:180.0pt;padding:0cm 5.4pt 0cm 5.4pt">
-                            <p class="MsoNormal" align="right" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;text-align:right;line-height:normal">Tel:
+                            <p class="MsoNormal" align="right"
+                                style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;text-align:right;line-height:normal">
+                                Tel:
                                 (416) 287- 7466</p>
-                            <p class="MsoNormal" align="right" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;text-align:right;line-height:normal"><span class="GramE"><span lang="FR"
-                                        style="mso-ansi-language:FR">Fax:</span></span><span lang="FR"
-                                    style="mso-ansi-language:FR"> (416) 287-7642</span></p>
-                            <p class="MsoNormal" align="right" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">
+                            <p class="MsoNormal" align="right"
+                                style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;text-align:right;line-height:normal">
+                                <span class="GramE"><span lang="FR" style="mso-ansi-language:FR">Fax:</span></span><span
+                                    lang="FR" style="mso-ansi-language:FR"> (416) 287-7642</span></p>
+                            <p class="MsoNormal" align="right"
+                                style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:2.0cm;line-height:normal">
                                 <span class="GramE">
                                     <span lang="FR" style="mso-ansi-language:FR">E-mail:</span>
                                 </span>
@@ -133,35 +143,42 @@ break-word;text-justify-trim:punctuation">
     </div>
 
     <div id="experimentContainer">
-        <div class="passage" id="content" style="display: none;"></div>
-        <div class="passage" id="content3w" style="display: none;">
-            <div class="word" id="prevWord"></div>
-            <div class="word" id="currWord"></div>
-            <div class="word" id="nextWord"></div>
+        <div id="instructionContainer" style="display: none;">
+            <div class="instructions" id="instruction"></div>
+            <button class="instructions" id="startButton" onclick="startCondition()">
+                Start </button>
         </div>
-        <div class="passage" id="contentSliding" style="display: none;">
-            <div id="scrollingText"></div>
-            <div class="box"></div>
-        </div>
-        <div class="passage" id="contentSlidingNarrow" style="display: none;">
-            <div id="scrollingTextNarrow"></div>
-            <div class="box"></div>
-        </div>
-        <div class="passage" id="content1l" style="display: none;"></div>
-        <div id="questionContainer" style="display: none;">
-            <p id="question"></p>
-            <form id="optionsForm">
-                <label><input type="radio" name="option" value="A"> <span id="optionALabel"></span></label><br>
-                <label><input type="radio" name="option" value="B"> <span id="optionBLabel"></span></label><br>
-                <label><input type="radio" name="option" value="C"> <span id="optionCLabel"></span></label><br>
-                <label><input type="radio" name="option" value="D"> <span id="optionDLabel"></span></label><br>
-            </form>
-            <button onclick="submitAnswer()">Submit</button>
-        </div>
-        <div id="buttonContainer"
-            style="display: none;font-size: large;background-color: MediumSeaGreen;font-weight: bold;padding: 1%;">
-        </div>
-        <div id="formContainer"></div>
+    </div>
+    <div id="plusSymbol">+</div>
+    <div class="passage" id="content" style="display: none;"></div>
+    <div class="passage" id="content3w" style="display: none;">
+        <div class="word" id="prevWord"></div>
+        <div class="word" id="currWord"></div>
+        <div class="word" id="nextWord"></div>
+    </div>
+    <div class="passage" id="contentSliding" style="display: none;">
+        <div id="scrollingText"></div>
+        <div class="box"></div>
+    </div>
+    <div class="passage" id="contentSlidingNarrow" style="display: none;">
+        <div id="scrollingTextNarrow"></div>
+        <div class="box"></div>
+    </div>
+    <div class="passage" id="content1l" style="display: none;"></div>
+    <div id="questionContainer" style="display: none;">
+        <p id="question"></p>
+        <form id="optionsForm">
+            <label><input type="radio" name="option" value="A"> <span id="optionALabel"></span></label><br>
+            <label><input type="radio" name="option" value="B"> <span id="optionBLabel"></span></label><br>
+            <label><input type="radio" name="option" value="C"> <span id="optionCLabel"></span></label><br>
+            <label><input type="radio" name="option" value="D"> <span id="optionDLabel"></span></label><br>
+        </form>
+        <button onclick="submitAnswer()">Submit</button>
+    </div>
+    <div id="buttonContainer"
+        style="display: none;font-size: large;background-color: MediumSeaGreen;font-weight: bold;padding: 1%;">
+    </div>
+    <div id="formContainer"></div>
     </div>
 
     <div class="non-passage" id="individualQuestionContainer" style="display: none;">
