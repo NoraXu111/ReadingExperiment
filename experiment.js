@@ -268,20 +268,20 @@ function displayPlusSymbol() {
             Experiment3Words();
         }
 
-        else if (conditionIndex === 3) {
-            console.log("SlidingRSVP")
-            ExperimentSliding();
-        }
+        // else if (conditionIndex === 3) {
+        //     console.log("SlidingRSVP")
+        //     ExperimentSliding();
+        // }
 
-        else if (conditionIndex === 4) {
+        else if (conditionIndex === 3) {
             console.log("SlidingNarrowRSVP");
             ExperimentSlidingNarrow();
         }
 
-        else if (conditionIndex === 5) {
-            console.log("OneLineRSVP");
-            ExperimentOneLineRSVP();
-        }
+        // else if (conditionIndex === 5) {
+        //     console.log("OneLineRSVP");
+        //     ExperimentOneLineRSVP();
+        // }
 
     }, 100);
 }
