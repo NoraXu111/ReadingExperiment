@@ -1,0 +1,16 @@
+[
+    {
+        "passageCode": "1",
+        "passage": "this is passage 1, assuming it's a long passage",
+        "question": "What made spices a symbol of wealth and luxury?",
+        "answerChoices":["The difficulty of processing raw spices into its usable form",  "The rarity of this commodity at the time of discovery",  "The lack of reliable transportation", "The scarcity of plantations"],
+        "correctAnswer":"The rarity of this commodity at the time of discovery"
+    },
+    {
+        "passageCode": "2",
+        "passage": "this is passage 2, assuming it's a long passage",
+        "question": "Which phrase would best serve as the title of the passage?",
+        "answerChoices":["The significance of distance as a cultural isolator",  "The problems of creating a uniform global history of literature",  "The destruction of the Library of Alexandria",  "The deliberate suppression of texts by organizations"],
+        "correctAnswer":"The problems of creating a uniform global history of literature"
+    }
+]
