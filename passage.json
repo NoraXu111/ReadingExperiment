@@ -1,0 +1,151 @@
+[
+    {
+        "passageCode": "1",
+        "passage": "Over two thousand years ago, Arab traders told enticing tales dedicated to spices such as cinnamon. They would go on about the trials and tribulations associated with cinnamon sticks, perhaps attempting to ward off Greek and Roman competitors, and to elevate and mystify cinnamon and its source. Today, it might seems peculiar that something as seemingly inconsequential as a spice requires this form of guarding. The secret could not be kept for long, as European explorers discovered that spices were plentiful, and it would be easier to access this resource by doing away with the Arabs. Not only did this result in a lasting change into the European diet, but it also changed the definition of wealth, as only the rich and powerful were able to access these exotic commodities before spices made their way to the homes of commoners.",
+        "question": "What made spices a symbol of wealth and luxury?",
+        "answerChoices":["The difficulty of processing raw spices into its usable form",  "The rarity of this commodity at the time of discovery",  "The lack of reliable transportation", "The scarcity of plantations"],
+        "correctAnswer":"The rarity of this commodity at the time of discovery"
+    },
+    {
+        "passageCode": "2",
+        "passage": "Literature and writing, though connected, are not synonymous. Scholars have often disagreed concerning when written record-keeping became more like 'literature' than anything else. Moreover, given the significance of distance as a cultural isolator in earlier centuries, the historical development of literature did not occur at an even pace. The problems of creating a uniform global history of literature are compounded by the lost of many texts over the millennia, either deliberately, by accident, or by the total disappearance of the originating culture. Much has been written, for example, about the destruction of the Library of Alexandria in the 1st century BC, and the many key texts which are believed to have been lost forever to the flames. The deliberate suppression of texts (and often their authors) by organizations of either a spiritual or a temporal nature further shrouds the subject.",
+        "question": "Which phrase would best serve as the title of the passage?",
+        "answerChoices":["The significance of distance as a cultural isolator",  "The problems of creating a uniform global history of literature",  "The destruction of the Library of Alexandria",  "The deliberate suppression of texts by organizations"],
+        "correctAnswer":"The problems of creating a uniform global history of literature"
+    },
+    {
+        "passageCode": "3",
+        "passage": "There is a sharp decline in dissolved oxygen levels in the world's ocean waters. This kind of oxygen depletion is also known as hypoxia. Hypoxia is mainly a result of agricultural run-off and discharge of industrial waste into the waters. Hypoxic areas are often also referred to as dead zones, which exist worldwide today. Consequences of these dead zones have resulted in a plummet in the population of fish. Fish, like humans, require oxygen for survival. Female fish are at particular risk as oxygen is required to produce more eggs. The production of fewer eggs alters the hormonal states in these fish. This effect on fish biology results in the overproduction of testosterone and inevitably reduces the development of the female reproductive organs. This significantly impacts sustainability of fish species, which may result in very significant changes in marine ecosystems.",
+        "question": "The author of this passage would view the mentioned developments as:",
+        "answerChoices":["Alarming", "Puzzling", "Fostering", "Unexpected"],
+        "correctAnswer":"Alarming"
+    },
+    {
+        "passageCode": "4",
+        "passage": "Although all fifty states in America have allowed women to breastfeed in public or private locations, many nursing women have reported feeling stigmatized and shamed for breastfeeding in public. Even though public breastfeeding is legal and perhaps at times socially accepted, some mothers remain reluctant to breastfeed in public because of possible objections, negative comments, and harassment by others. Some mothers claim that they are often given the side eye and asked to leave private and public areas only because of bystanders’ feeling of discomfort. The stigma around breastfeeding is something that many activists and celebrities are working on dismantling nowadays. Given that breastfeeding is a natural part of motherhood, reduces the risk of ovarian and breast cancer, and allows for invaluable skin to skin contact, breastfeeding, be it in public or in private, should be always encouraged and destigmatized.",
+        "question": "According to this passage, what is the main reason that some women don't breastfeed in public?",
+        "answerChoices": ["Because of stresses and distractions in public settings, the infant does not want to breastfeed", "Public breastfeeding induces stress on the infant", "Nursing women often require a quiet environment to ensure comfort for them and their babies, and so, private locations are best", "Nursing women fear public scrutiny"],
+        "correctAnswer": "Nursing women fear public scrutiny"
+    },
+    {
+        "passageCode": "5",
+        "passage": "The ancient craft of storytelling is not only the means by which people passed on their cultural values and traditions and history from one generation to another, it has been an important part of most forms of entertainment and a means of bringing people together since ancient times. Stories are still told in the early forms, around a fire while camping, or when listening to the stories of another culture as a tourist. The earliest storytelling sequences we possess, committed to writing, were spread and their force as entertainment derived from the very same elements we enjoy in films and novels. Many entertainments, including storytelling but especially music and drama, remain familiar but have developed into a variety of form to suit a wide range of personal preferences and identity expression. Many types are blended or supported by other forms.",
+        "question": "Which of the following is NOT an example that illustrates the importance of storytelling as discussed in the passage?",
+        "answerChoices": ["A mother passing down and preserving religious traditions she learned from her parents to her children.", "A group of children bonding over youth experiences told by their grandparents.", "An Arab man feeling more comfortable with his heritage after seeing a positive representation of Arabs in films.", "A sales company representative creating advertisements that foster a personal connection with customers to build customer loyalty."],
+        "correctAnswer": "A sales company representative creating advertisements that foster a personal connection with customers to build customer loyalty."
+    },
+    {
+        "passageCode": "6",
+        "passage": "Unfortunately, literary critics often judge books based on perceived understandability, in that great works should be difficult to be understood. The average reader today would struggle to fully grasp all of the themes presented in Shakespeare's Hamlet, allowing this literary work to maintain its prestige centuries after it was first written. This snobbery is precisely what has prevented Isabel Allende's The House of Spirits from receiving its due critical acclaim. This novel focuses heavily on Allende's own family history as the cousin once removed of a former Chilean president. She traces the post-colonial social and political upheavals of Chile and their effects on her family with a powerful and original voice. Allende's work was written to be understood by the common man, so despite the strong political messages she shared, she was not regarded by critics as the literary powerhouse.",
+        "question": "How would the author of this passage describe the mentioned literary critics?",
+        "answerChoices":["Hopeless",  "Deceitful",  "Selfish",  "Arrogant"],
+        "correctAnswer":"Arrogant"
+    },
+    {
+        "passageCode": "7",
+        "passage": "Human civilization has certainly produced a negative impact on biodiversity throughout the history. The World Conservation Union's Red List has reported thousands of threatened species and hundreds of documented extinctions. The numbers are increasing at alarming rates. This increase is a result of the Industrial Revolution, which introduced overfishing, overhunting, habitat destruction for the spread of agriculture, and pesticide and herbicide use, resulting in the release of toxic chemicals. Events such as these have led to the introduction of new food sources, stresses, predators, and threats that the affected species have learned to rapidly adapt to. Drinking water has also become more and more scarce, posing further threats to animal and plant biodiversity. Despite the challenges caused by the Industrial Revolution, both animal and plant species have been able to thrive in their changing environment while also prospering with humans.",
+        "question": "Which of the following best describes the purpose of mentioning the Red List?",
+        "answerChoices":["Provide the scope of human impacts on biodiversity", "Provide some historical context", "Provide an example of negative impacts on climate change", "To identify threatened species"],
+        "correctAnswer":"Provide the scope of human impacts on biodiversity"
+    },
+    {
+        "passageCode": "8",
+        "passage": "'When the lights go out' is a phrase used in many parts of the world when power outages occur. Two years ago, Venezuela experienced a five-day nationwide blackout. This power cut hit the hospitals hard. There was nothing doctors could do in the complete darkness. Unprepared for the sudden loss of power, some hospitals were unable to power up generators, while others could do so only to power their most vital wards. The problems extended far beyond hospitals as elderly people in high-rise flats were carried down the stairs by neighbouring tenants and people were required to set up candles all over their homes and cook food using fire. Pumps that provided people with running water halted, food spoiled, traffic lights failed, and transportation systems halted. During these power outages, the lights going out are the least of our worries.",
+        "question": "What is the primary purpose of this passage?",
+        "answerChoices":["To convince people to donate to the Venezuelan healthcare and transportation systems",  "To demonstrate the necessity of preparing for economic and natural disasters by purchasing backup generators",  "To show that power outages have devastating consequences beyond the inconvenience of losing light",  "To convince people to have an emergency kit containing essentials like pre-cooked meals and drinking water"],
+        "correctAnswer":"To show that power outages have devastating consequences beyond the inconvenience of losing light"
+    },
+    {
+        "passageCode": "9",
+        "passage": "A very special species of wasps is found in Central and North America and New Zealand. Its larvae are distinguished by their ability to manipulate their hosts into serving as bodyguards. Female wasps of that species oviposit into caterpillar hosts by piercing into the caterpillar with its sharp tube-like organ. After the larvae of this species emerge, the caterpillar takes up position near the cocoons of the pupae, arches its back, and ceases to move or feed. No longer inclined to eat, the affected caterpillar eventually dies. It has been demonstrated in research that this behavior is to strike at and repel possible predators of the pupae. Mortality rates for pupae not guarded by parasitized caterpillars were significantly higher. It is of no demonstrated benefit to the caterpillar, indicating that this is an adaptation on the part of the wasp.",
+        "question": "According to this passage, why is it important that the wasp oviposits?",
+        "answerChoices":["To take control of the host and make it a bodyguard for its eggs", "To allow the wasp’s eggs to get fertilized",  "To lay its eggs in the caterpillar host",  "To make sure her pupae can move and eat once they hatch out of their eggs, ensuring a low mortality rate of the pupae."],
+        "correctAnswer":"To take control of the host and make it a bodyguard for its eggs"
+    },
+    {
+        "passageCode": "10",
+        "passage": "'Forever chemicals' are chemical compounds known to persist in the environment. This family of potentially thousands of synthetic chemicals is enduring in the environment and in our bodies. Residues have been detected in humans and wildlife, with health concerns resulting in litigation. In 2021, Maine became the first US state to ban these compounds in all products by 2030, except in instances deemed ‘currently unavoidable’. Early studies revealed elevated levels of these chemicals in the blood of exposed industrial workers but cited no ill health effects. However, given its property of being a ‘forever chemical’ and that it is involved in widespread contamination, molecules have been shown to accumulate in humans to such a degree that adverse health outcomes have been observed. Epidemiologists have even linked hormone disrupting chemicals such as these forever chemicals with rapid declines in human fertility.",
+        "question": "Why does the author include the fact that Maine was the first state to ban forever chemicals?",
+        "answerChoices": ["To commend Maine for their commitment to protecting the environment", "To condemn US states besides Maine that have not taken initiative to protect the environment", "To show how forever chemicals are given too much weight to the extent of being banned in some states", "To describe efforts in stopping the use of forever chemicals despite being, at times, unavoidable"],
+        "correctAnswer": "To describe efforts in stopping the use of forever chemicals despite being, at times, unavoidable"
+    },
+    {
+        "passageCode": "11",
+        "passage": "Sixty years ago, tastier bananas that did not require any artificial ripening, Gros Michel bananas, were commercially available. They remained the world’s export banana until they went extinct in 1965 because of the Panama disease. This fungal disease spread to most banana plantations, also destroying Gros Michel plantations. A new banana called the Cavendish, was thought to be immune to the Panama disease. However, Cavendish bananas are only immune to the strain of the fungus that destroyed the Gros Michel and can be easily infected again. Scientists are trying to modify the banana plant to make it impervious to other strains of the Panama disease. The resulting fruit also needs to taste good, ripen in a predictable amount of time, travel long distances undamaged, and be easy to grow in great quantities. Currently, no hybrid meets all of these criteria.",
+        "question": "According to this passage, which of the following is a goal of scientists as they are modifying the current species of banana?",
+        "answerChoices":["Make it resistant to the strain of the Panama Disease that annihilated Gros Michel plantations", "Make it resistant to strains of the Panama disease besides the one that destroyed Gros Michel", "Recreate the original Gros Michel banana from 60 years ago", "Create different versions with different levels of sweetness"],
+        "correctAnswer":"Make it resistant to strains of the Panama disease besides the one that destroyed Gros Michel"
+    },
+    {
+        "passageCode": "12",
+        "passage": "Robert Boyle is credited for his landmark publication The Sceptical Chymist in 1661, which is seen as a cornerstone book in the field of chemistry. Before his publication, the prevailing belief was that the classic four elements (air, fire, earth, and water) comprise all matter and were responsible for all worldly phenomena. Boyle appealed to chemists to experiment and asserted that experiments denied the limiting of chemical elements to only the classic four. He also pleaded that chemistry should cease to be subservient to medicine, and rise to the status of a science. Importantly, he advocated a rigorous approach to scientific experiment: he believed all theories must be proved experimentally before being regarded as true. The work contains some of the earliest modern ideas of atoms, molecules, and chemical reactions, and marks the beginning of the history of modern chemistry.",
+        "question": "What would be the BEST title for the passage?",
+        "answerChoices":["How Boyle Encouraged Experimentation in Chemistry",  "How Boyle Revolutionized the Field of Chemistry", "How Boyle Disproved the Classic Four Elements", "How Boyle Shaped our Understanding of Atoms"],
+        "correctAnswer": "How Boyle Revolutionized the Field of Chemistry"
+    },
+    {
+        "passageCode": "13",
+        "passage": "The epithet 'redcoats' is familiar throughout much of the former British Empire, even though this colour was by no means exclusive to the British Army. However, the extensive use of this colour by British, Indian and other Imperial soldiers over a period of nearly three hundred years made the red uniform a veritable icon of the British Empire. The significance of military red as a national symbol was endorsed by King William IV when light dragoons and lancers had scarlet jackets substituted for their previous dark blue, hussars adopted red pelisses, and even soldiers serving in the Royal Navy were obliged to adopt red facings instead of white ones. Most of these changes were reversed under Queen Victoria. A red coat and black tricorne remains a part of the ceremonial and out-of-hospital dress for in-pensioners at the Royal Hospital Chelsea.",
+        "question": "Based solely on the passage: Fill in the blank with the most appropriate words: Red uniforms were ______ the British Army.",
+        "answerChoices":["Unique to", "Started by", "Characteristic of", "Despised by"],
+        "correctAnswer":"Characteristic of"
+    },
+    {
+        "passageCode": "14",
+        "passage": "The term 'stage fright' can be considered a misnomer. The term fright implies a state of shock which one is unprepared for. Stage fright is experienced by professional performers who are trained to act yet still experience unmooring hits of panic once on stage. Curiously, despite its ability to nearly cripple performers, stage fright is not thought of as a phobia but a subset of glossophobia, the fear of public speaking. Studies have equated actors’ stress levels on opening night to that of a car accident victim. In 'Confessions of an Actor', Laurence Oliver describes stage fright as constantly waiting outside the door, and one needs to either fight it or walk away. Glenn Gould, a piano maestro, suffered from incapacitating stage fright and decided to walk away, abandoning a promising performance career for the privacy of a recording studio.",
+        "question": "Which of the following best details the use of the term “unmooring” used in the passage?",
+        "answerChoices":["Irrational fear", "Strong anxiety that the performer feels hindered by", "Excitement and anxiety that has been released from the performer", "Anchoring nervousness keeping the performer motivated"],
+        "correctAnswer": "Strong anxiety that the performer feels hindered by"
+    },
+    {
+        "passageCode": "15",
+        "passage": "In the ancient city of Cyrene, an herb called silphium existed. It did not look so extraordinary as it only had stumpy leaves with small yellow flowers. It was unique because it oozed an odoriferous fluid that was useful and delicious. Its stalks were roasted or boiled and eaten, while its roots were consumed fresh. This plant was capable of many uses, from conserving grains to healing ailments, and perhaps most famous of all is its properties as an aphrodisiac. The Romans used it as a natural contraceptive preventing unwanted pregnancies. This plant was so special that Caesar kept a supply of it in his treasury. But today, silphium has possibly disappeared, and some believed that it was driven to extinction because of its popularity among the Romans. Others think that this plant could still exist, hiding in plain sight.",
+        "question": "Which of the following best serves as the title of the passage?",
+        "answerChoices":["The mystery of the lost Roman herb", "The delicious flavor with a toxic secret", "The Roman Herb that travelled the world", "The not so ordinary lethal herb"],
+        "correctAnswer":"The mystery of the lost Roman herb"
+    },
+    {
+        "passageCode": "16",
+        "passage": "Bronson Alcott was possibly best known for being a close confidante of luminaries such as Margaret Fuller, Henry David Thoreau and Ralph Waldo Emerson. As impressive as that was, remembering this man merely for his connections is to miss his significance to American philosophy and more specifically, the Transcendental Movement. His writings on behalf of that movement, however, are heavily criticized for being incoherent by literary critics. Based on his ideas for human perfection, Alcott founded Fruitlands, a transcendentalist experiment in community living, a project that failed after about seven months. However, Alcott was a knowledgeable speaker who advocated for and pioneered new ways of interacting with young students, focusing on a conversational style, and avoiding traditional punishment. He believed that all student spiritual growth was associated with intellectual growth, hence why he advocated for a Socratic method of teaching.",
+        "question": "The author of this passage will most likely agree with all of the following statements EXCEPT:",
+        "answerChoices":["Alcott was an exceptional educator although he was not a gifted speaker", "Alcott’s ideas were ahead of his time", "Alcott should be remembered for his contributions to the Transcendental Movement", "Alcott’s ideas about education were not always accepted"],
+        "correctAnswer":"Alcott was an exceptional educator although he was not a gifted speaker"
+    },
+    {
+        "passageCode": "17",
+        "passage": "The American Academy of Pediatrics wants mothers to store blood left over in the umbilical cord and placenta after childbirth. Collected cord blood is preserved at low temperatures and stored in a blood bank for future use. Cord blood contains stem cells, which are cells from which all other cells with specialized functions are generated. These cells can be used to treat blood and genetic disorders such as cancer. There is growing interest from cell therapeutics companies in developing genetically modified cells from umbilical blood as an alternative to other cell therapies for rare diseases. Research is progressively revealing ways this precious and almost magical substance can save lives. Although diseases that are curable with cord blood are not very common, these diseases affect millions of children worldwide, hence why medical professionals encourage women to donate to cord blood banks.",
+        "question": "Why is the use of cord blood so revolutionary?",
+        "answerChoices":["It can treat blood disorders and other genetic diseases acquired in life", "It can alleviate the mother's pain during childbirth", "It can reduce birth defects that can affect almost any part of the body", "It can cure structural defects present at birth that can affect almost any part of the body"],
+        "correctAnswer": "It can treat blood disorders and other genetic diseases acquired in life"
+    },
+    {
+        "passageCode": "18",
+        "passage": "The Agricultural (Neolithic) Revolution had effects far beyond the adoption of a limited set of food-producing techniques. During the next millennia, it has transformed the small and mobile groups of hunter-gatherers that had hitherto dominated human pre-history into sedentary societies based in built-up villages and towns. These societies radically modified their natural environment by means of specialized crop cultivation which allowed the production of surplus food. Other developments that are found very widely during this era are the domestication of animals, pottery, and polished stone tools. In many regions, the adoption of agriculture by prehistoric societies caused episodes of rapid population growth, a phenomenon known as the Neolithic demographic transition. The relationship of Neolithic characteristics to the onset of agriculture, their sequence of emergence, and empirical relation to each other at various Neolithic sites remains the subject of academic debate.",
+        "question": "Based on this passage, which modern issue was most directly caused by the Agricultural Revolution?",
+        "answerChoices":["Government corruption", "Racial inequality", "Climate change", "Lack of access to healthcare"],
+        "correctAnswer":"Climate change"
+    },
+    {
+        "passageCode": "19",
+        "passage": "One of my students was being disruptive in class, and so, I read them the riot act. The idiom ‘reading the Riot Act’ refers to reprimanding someone for behaving badly with the intention of improving their behaviour. This originates from the Riot Act passed by the Parliament of Great Britain which authorised local authorities to declare any group of twelve or more people to be unlawfully assembled and to disperse or face punitive action. The act was titled ‘An Act for preventing tumults and riotous assemblies, and for the more speedy and effective punishment of the rioters’, and it came into force in 1714. Thus, if someone is behaving in manners that we find inappropriate, we ‘read them the riot act’, upon which they must leave or be imprisoned. This Riot Act intended to get the rowdy individual to stop.",
+        "question": "What word conveys the same meaning as the idiom “reading the Riot Act”?",
+        "answerChoices":["Expel", "Condemn", "Detain", "Insult"],
+        "correctAnswer": "Condemn"
+    },
+
+    {
+        "passageCode": "20",
+        "passage": "In 2014, one of the world’s biggest rainforests, Te Urewera, was returned to its Indigenous owners after a world-first law brought an end to the New Zealand government ownership of the Te Urewera. This rainforest spans over two thousand square kilometers of emerald lakes, waterfalls and mist-shrouded canopies. For centuries, this pristine ecosystem has been home to the Indigenous Tuhoe people. From the time when the land was returned, thousands of Tuhoe people living near the river valleys encourage visitors to connect with their sacred land by offering guided treks, teaching a heightened sense of the Indigenous Maori practice of guardianship, providing lodging activities and home-cooked meals, and offering a chance to take part in reforestation projects. The Tuhoe people are hoping to inspire tourists to develop an appreciation of their ancestral home and a sense of their traditional practices.",
+        "question": "How does the author of this passage feel about the Te Urewera rainforest being returned to the Indigenous people?",
+        "answerChoices":["Optimistic", "Prideful", "Indifferent", "Determined"],
+        "correctAnswer": "Optimistic"
+    },
+
+    {
+        "passageCode": "21",
+        "passage": "In Mesopotamia, cuneiform was a type of script that used one character to represent one word, took many years to master. Thus, only a limited number of individuals were hired as scribes to be trained in reading and writing. Only royal offspring of the rich and professionals such as scribes, physicians, and religious administrators, were schooled. Most boys were taught their father's trade or were apprenticed to learn a trade. Girls stayed at home with their mothers to learn to housekeep. Later, when a syllabic script became widespread, more of the Mesopotamian population became literate. There arose a whole social class of scribes, mostly employed in agriculture, but some as personal secretaries or lawyers. Vocabulary and grammar rules were compiled for the use of students, as well as commentaries on the older texts and explanations of obscure words and phrases.",
+        "question": "What significantly increased the literacy rate in Mesopotamia?",
+        "answerChoices":["The increased interest in girls’ and women’s education", "The more affordable rates of scribes", "The switch from cuneiform to a syllabic script", "The reform of the cuneiform script"],
+        "correctAnswer":"The switch from cuneiform to a syllabic script"
+    }
+]
