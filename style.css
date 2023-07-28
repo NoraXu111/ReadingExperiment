@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; 
+    height: 30px;
+    border: 2px solid black; 
+    background-color: transparent; 
+    z-index: 1; /* 确保方框在滑动文字上方 */
+}
+
+.passage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+.non-passage {
+  margin: 2cm;
+}
+
+#questionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0; /* Add your desired background color */
+  padding: 20px;
+  border: 2px solid #000; /* Add your desired border style */
+  border-radius: 10px; /* Add your desired border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add your desired box shadow */
+}
+
+/* Modify the font size */
+#questionContainer p,
+#questionContainer label,
+#questionContainer button {
+  font-size: 20px; /* Add your desired font size in pixels or other units */
+}
+
+/* Add spacing to the submit button */
+#questionContainer button {
+  margin-top: 10px; /* Add your desired top margin */
+}
+
+/* Make the submit button larger */
+#questionContainer button {
+  padding: 10px 20px; /* Add your desired padding for top and bottom, left and right */
+}
+
+#test {
+    color: aqua;
+}
+
+#scrollingText {
+    white-space: nowrap;
+    animation: scrollText linear infinite;
+  }
+
+  @keyframes scrollText {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+#contentSlidingNarrow {
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#scrollingTextNarrow {
+  white-space: nowrap;
+  animation: scrollText linear infinite;
+}
+
+@keyframes scrollTextNarrow {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
