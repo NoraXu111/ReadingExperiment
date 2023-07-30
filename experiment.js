@@ -7,10 +7,13 @@ var currentPassageIndex;
 var currentPassage;
 var answer = "";
 var experimentRes = {};
+var experimentTime = {};
 var response;
 var data;
-let csvContent = 'conditionName,passageCode,answer\n';
-
+let csvContent = 'conditionName,passageCode,answer,timeTaken\n';
+let timeoutId;
+let startTime;
+var timeTaken;
 
 const conditions = {
     1: "OriginalRSVP",
@@ -26,7 +29,7 @@ var conditionData;
 
 var articleIndices;
 
-const totalConditions = 1;
+const totalConditions = 3;
 var ConditionCounter = 1;
 var visitedArticles = [];
 var visitedConditions = [];
@@ -115,9 +118,9 @@ function waitForConditionCompletion(callback) {
 }
 
 function generateRandomCondtionIndex() {
-    var randomNumber = Math.floor(Math.random() * 4) + 1;
+    var randomNumber = Math.floor(Math.random() * 3) + 1;
     while (visitedConditions.includes(randomNumber)) {
-        randomNumber = Math.floor(Math.random() * 4) + 1;
+        randomNumber = Math.floor(Math.random() * 3) + 1;
     }
     visitedConditions.push(randomNumber);
     console.log("generated random condition index = " + randomNumber);
@@ -126,15 +129,22 @@ function generateRandomCondtionIndex() {
 }
 
 function generateRandomArticleIndex() {
-    var result = [0, 0, 0, 0, 0, 0, 0];
-    for (var i=0; i < 6; i++){
-    while(visitedArticles.includes(result[i])){
-        result[i] = Math.floor(Math.random() * 21) + 1;
+    console.log("start generate");
+    var result = [];
+
+    while (result.length < 7) {
+        var randomNumber = Math.floor(Math.random() * 21);
+        if (!visitedArticles.includes(randomNumber)) {
+            visitedArticles.push(randomNumber);
+            result.push(randomNumber);
+        }
     }
-    visitedArticles.push(result[i]);
-    }
+
+    console.log("random articles: " + result);
+    console.log("visitedArticles: " + visitedArticles);
     return result;
-    // return [0, 1, 0];
+    
+    // return [0, 1, 2];
 }
 
 function GoToExperimentRSVP() {
@@ -143,6 +153,10 @@ function GoToExperimentRSVP() {
 
     const ori_ins = document.getElementById("instruction");
     ori_ins.style.display = "block";
+
+    while (ori_ins.firstChild) {
+        ori_ins.removeChild(ori_ins.firstChild);
+    }
 
     const instruction = ["Welcome to this version of the Reading Task! \n",
         "In this task, you will read 7 different texts. ",
@@ -177,6 +191,10 @@ function GoTo3WRSVP() {
 
     const ori_ins = document.getElementById("instruction");
     ori_ins.style.display = "block";
+
+    while (ori_ins.firstChild) {
+        ori_ins.removeChild(ori_ins.firstChild);
+    }
 
     const instruction = ["Welcome to this version of the Reading Task! \n",
         "In this task, you will read 7 different texts. ",
@@ -214,6 +232,10 @@ function GoToscrollingRSVP() {
 
     const ori_ins = document.getElementById("instruction");
     ori_ins.style.display = "block";
+
+    while (ori_ins.firstChild) {
+        ori_ins.removeChild(ori_ins.firstChild);
+    }
 
     const instruction = ["Welcome to this version of the Reading Task! \n",
         "In this task, you will read 7 different texts. ",
@@ -278,7 +300,7 @@ function displayPlusSymbol() {
         //     ExperimentOneLineRSVP();
         // }
 
-    }, 100);
+    }, 500);
 }
 
 
@@ -286,6 +308,7 @@ function startCondition() {
     const ins_container = document.getElementById("instructionContainer");
     ins_container.style.display = "none";
 
+    alert("Are you ready? \nRemember, the text will appear at the center of the screen.")
 
     displayPlusSymbol();
 }
@@ -373,6 +396,7 @@ function displayPassage3WRSVP(words) {
     const previousWordElement = document.getElementById('prevWord');
     const currentWordElement = document.getElementById('currWord');
     const nextWordElement = document.getElementById('nextWord');
+    currentWordElement.style.display = "flex";
 
     let index = 1;
     const interval = setInterval(() => {
@@ -385,28 +409,13 @@ function displayPassage3WRSVP(words) {
 
         previousWordElement.innerHTML = index > 0 ? words[index - 1] + '&nbsp;' : '';
         currentWordElement.innerHTML = words[index];
-        currentWordElement.style.fontWeight = 'bold';
+        // currentWordElement.style.fontWeight = 'bold';
+        currentWordElement.style.border = "2px solid black";
         nextWordElement.innerHTML = index < words.length - 1 ? '&nbsp;' + words[index + 1] : '';
 
         index++;
     }, 300);
 
-    // Calculate the width of the parent container and the total width of all word elements
-    // const containerWidth = passageElement.offsetWidth;
-    // const totalWordsWidth = previousWordElement.offsetWidth + currentWordElement.offsetWidth + nextWordElement.offsetWidth;
-
-    // // Calculate the left position of 'currWord' so that it remains centered
-    // const leftPosition = (containerWidth - currentWordElement.offsetWidth) / 2;
-
-    // // Calculate the space to be distributed on each side of 'currWord'
-    // const spaceToDistribute = (containerWidth - totalWordsWidth) / 2;
-
-    // // Set the left position of 'currWord' to center it
-    // currentWordElement.style.left = leftPosition + 'px';
-
-    // // Set the margin-left of 'prevWord' and 'nextWord' to create equal spacing
-    // previousWordElement.style.marginLeft = spaceToDistribute + 'px';
-    // nextWordElement.style.marginLeft = spaceToDistribute + 'px';
 }
 
 function ExperimentSliding() {
@@ -593,6 +602,16 @@ async function displayQuestion() {
         }
     }
 
+    startTime = Date.now();
+
+    clearTimeout(timeoutId);
+
+    // Set the timeout for 2 minutes (120000 milliseconds)
+    timeoutId = setTimeout(() => {
+        console.log("Timeout: Automatically submitting the answer after 2 minutes.");
+        submitAnswer();
+    }, 120000);
+
 }
 
 
@@ -647,49 +666,46 @@ async function saveAnswersToCSV() {
 
 
 function submitAnswer() {
+    clearTimeout(timeoutId);
+    timeTaken = Date.now() - startTime;
+    console.log("time taken: " + timeTaken);
+
     var selectedOption = document.querySelector('input[name="option"]:checked');
 
     if (selectedOption) {
         var selectedValue = selectedOption.value;
-        userAnswer = selectedValue
+        userAnswer = selectedValue;
         console.log("selected", selectedValue);
         selectedOption.checked = false;
 
         const curr_ans = userAnswer;
         if (curr_ans === answer) {
-            console.log("correct")
-            experimentRes[(currentPassageIndex + 1).toString()] = "1"
+            console.log("correct");
+            experimentRes[(articleIndices[currentPassageIndex] + 1).toString()] = "1";
         }
         else {
-            experimentRes[(currentPassageIndex + 1).toString()] = "0"
+            experimentRes[(articleIndices[currentPassageIndex] + 1).toString()] = "0";
             console.log("false")
         }
+        experimentTime[(articleIndices[currentPassageIndex] + 1).toString()] = timeTaken;
         currentPassageIndex++;
         console.log(currentPassageIndex);
         console.log(experimentRes);
 
-        console.log("submitted")
+        console.log("submitted");
         
         alert("Upon submission, you will be redirected to the next reading task. \nThe passage will appear at the center of the screen. \nAre you ready?");
 
         displayPlusSymbol();
-        // if (conditionIndex === 1) {
-        //     ExperimentRSVP();
-        // }
-        // else if (conditionIndex === 2) {
-        //     Experiment3Words();
-        // }
-        // else if (conditionIndex === 3) {
-        //     ExperimentSliding();
-        // }
-        // else if (conditionIndex === 4) {
-        //     ExperimentSlidingNarrow();
-        // }
-        // else if (conditionIndex === 5) {
-        //     ExperimentOneLineRSVP();
-        // }
     } else {
-        alert("Please select your answer before proceed");
+        // alert("Please select your answer before proceed");
+        experimentRes[(currentPassageIndex + 1).toString()] = "0"
+        console.log("timeout, then false")
+        currentPassageIndex++;
+
+        alert("Time out.\nyou will be redirected to the next reading task.\nThe passage will appear at the center of the screen. \nAre you ready?")
+        displayPlusSymbol();
+
     }
 }
 
@@ -720,9 +736,12 @@ function submitIndividualQuestions(event) {
 
     // Prepare CSV data
     Object.keys(experimentRes).forEach(function (passageCode) {
-        csvContent += '"' + conditionName + '","' + 'Experiment Result for Passage ' + passageCode + '","' + experimentRes[passageCode] + '"\n';
+        csvContent += '"' + conditionName + '","' + 'Experiment Result for Passage ' + passageCode + '","' + experimentRes[passageCode] + 
+        '","' + experimentTime[passageCode] + '"\n';
     });
 
+    experimentRes = {};
+    experimentTime = {};
 
     csvContent += processQuestion(conditionName, "How effective is this reading method for you in improving your reading quality?", formData.improvingQuality);
     csvContent += processMultipleChoiceQuestion(conditionName, "Why did you find this reading method effective?", formData.effectiveReasons);
@@ -777,14 +796,14 @@ function submitPerferenceForm(event) {
 
 
 function processQuestion(con, question, answer) {
-    return '"' + con + '","' + question + '","' + answer + '"\n';
+    return '"' + con + '","' + question + '","' + answer + '", N/A\n';
 }
 
 function processMultipleChoiceQuestion(con, question, answers) {
     var csvData = '';
     if (Array.isArray(answers) && answers.length > 0) {
         answers.forEach(function (answer) {
-            csvData += '"' + con + '","' + question + '","' + answer + '"\n';
+            csvData += '"' + con + '","' + question + '","' + answer + '", N/A\n'
         });
     }
     return csvData;

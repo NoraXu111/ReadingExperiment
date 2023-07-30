@@ -12,5 +12,12 @@
         "question": "Which phrase would best serve as the title of the passage?",
         "answerChoices":["The significance of distance as a cultural isolator",  "The problems of creating a uniform global history of literature",  "The destruction of the Library of Alexandria",  "The deliberate suppression of texts by organizations"],
         "correctAnswer":"The problems of creating a uniform global history of literature"
+    },
+    {
+        "passageCode": "3",
+        "passage": "this is passage 3, assuming it's a long passage",
+        "question": "The author of this passage would view the mentioned developments as:",
+        "answerChoices":["Alarming", "Puzzling", "Fostering", "Unexpected"],
+        "correctAnswer":"Alarming"
     }
 ]

@@ -153,7 +153,7 @@ break-word;text-justify-trim:punctuation">
     <div class="passage" id="content" style="display: none;"></div>
     <div class="passage" id="content3w" style="display: none;">
         <div class="word" id="prevWord"></div>
-        <div class="word" id="currWord"></div>
+        <div class="word" id="currWord" style="display: none;"></div>
         <div class="word" id="nextWord"></div>
     </div>
     <div class="passage" id="contentSliding" style="display: none;">
@@ -295,13 +295,13 @@ break-word;text-justify-trim:punctuation">
         <form id="readingPreferenceForm">
             <h2>Which reading method do you prefer?</h2>
             <label>
-                <input type="checkbox" name="readingMethod" value="Full Reading"> Full Reading
+                <input type="checkbox" name="readingMethod" value="RSVP"> Original RSVP (One word at a time pops out at the center of the screen).
             </label><br>
             <label>
-                <input type="checkbox" name="readingMethod" value="Paced Reading"> Paced Reading
+                <input type="checkbox" name="readingMethod" value="3Words"> 3 Words RSVP (Three words at a time, with the current word highlighted by a black box).
             </label><br>
             <label>
-                <input type="checkbox" name="readingMethod" value="RSVP"> RSVP
+                <input type="checkbox" name="readingMethod" value="Sliding"> Sliding RSVP (The entire passage slides inside the box).
             </label><br>
 
             <h2>Why do you prefer the selected method? Select all that apply.</h2>
